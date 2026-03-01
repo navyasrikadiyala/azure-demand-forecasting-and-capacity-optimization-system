@@ -1,35 +1,13 @@
-# Azure Demand Forecasting and Capacity Optimization System — Bakery Case Study
+## Milestone 2 — Feature Engineering & Data Wrangling
 
-## 📌 Project Overview
-This project predicts future bakery product demand using historical sales data and optimizes production capacity using data analytics techniques.
+The cleaned dataset was enriched with additional features to prepare it for machine learning modeling.
 
-## 🎯 Objectives
-- Analyze bakery sales data
-- Forecast future demand
-- Support capacity planning
-- Reduce wastage and shortages
+### Features Added:
+- DayOfWeek: Captures weekly demand patterns
+- Month: Represents seasonal trends
+- IsWeekend: Indicates weekend demand spikes
+- Lag1 and Lag7: Previous day and previous week demand values
+- RollingMean7 and RollingStd7: 7-day demand trends
+- Spike: Identifies unusually high demand days
 
-## 📊 Dataset
-Bread Basket Bakery Dataset  
-Contains transaction-level sales data.
-
-## 🧹 Data Preprocessing
-Raw data was cleaned and converted into daily demand using Python.
-
-## 📈 Forecasting Method
-A simple moving average method is used to predict future demand trends.
-
-## 🛠️ Technologies Used
-- Python
-- Pandas
-- VS Code
-
-## 📂 Files Included
-- clean_bakery_demand.csv — Processed dataset
-- preprocessing.py — Data preprocessing script
-- bakery_forecasting.py — Forecasting script
-- LICENSE — MIT License
-- README.md — Project documentation
-
-## 👩‍💻 Author
-k.navya sri
+The final dataset was transformed into a model-ready format with consistent schema and time granularity.
